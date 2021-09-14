@@ -9,8 +9,9 @@ private:
   LinkedList<T> lista;
 public:
   Stack(){}
-  void push(T dato){lista.insert_at_head();}
+  void push(T dato){lista.insert_at_head(dato);}
   T pop(){return lista.pop_head();}
+  bool is_empty() {return lista.is_empty();}
 };
 
 #endif
